@@ -38,16 +38,17 @@ pipeline {
             }
         }
 
-        stage('Publish Report') {
-            steps {
-                script {
-                    try {
-                        archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
-                    } catch (err) {
-                        echo "Report not found, skipping..."
-                    }
-                }
-            }
-        }
+       stage('Publish Report') {
+    steps {
+        publishHTML([
+            allowMissing: true,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'playwright-report',
+            reportFiles: 'index.html',
+            reportName: 'Playwright Report'
+        ])
+    }
+}
     }
 }
