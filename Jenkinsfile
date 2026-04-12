@@ -16,19 +16,19 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Install Playwright Browsers') {
             steps {
-                sh 'npx playwright install'
+                bat 'npx playwright install'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'npx playwright test'
+                bat 'npx playwright test'
             }
         }
 
