@@ -11,7 +11,7 @@ test-results/
 
 # Test artifacts
 test-user-data/
-testdata/
+
 
 # Build and compiled files
 dist/
