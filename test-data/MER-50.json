@@ -1,0 +1,25 @@
+{
+  "url": "https://www.saucedemo.com/",
+  "validUser": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "invalidUser": {
+    "username": "invalidUser",
+    "password": "invalidPassword"
+  },
+  "emptyUser": {
+    "username": "",
+    "password": "secret_sauce"
+  },
+  "specialCharUser": {
+    "username": "specialCharacters",
+    "password": "specialCharacters"
+  },
+  "lockedUser": {
+    "username": "lockedUser",
+    "password": "validPassword"
+  },
+  "minLengthPassword": "secret_sauce",
+  "maxLengthPassword": "maxLength"
+}
