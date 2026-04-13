@@ -1,0 +1,27 @@
+{
+  "url": "https://www.saucedemo.com/",
+  "validUser": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "invalidUser": {
+    "username": "invalidUser",
+    "password": "invalidPassword"
+  },
+  "emptyUser": {
+    "username": "",
+    "password": "pass"
+  },
+  "leadingTrailingSpaces": {
+    "username": "  standard_user  ",
+    "password": "  secret_sauce  "
+  },
+  "specialCharacters": {
+    "username": "user@123#$%",
+    "password": "pass@123#$%"
+  },
+  "maxLengthCredentials": {
+    "username": "thisusernameexceedsthemaximumlengthallowed",
+    "password": "thispasswordexceedsthemaximumlengthallowed"
+  }
+}
